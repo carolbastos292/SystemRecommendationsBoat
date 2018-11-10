@@ -1,0 +1,25 @@
+<div class="jumbotron text-center">
+  <h1>Dashboard</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h2 class="pb-3">Barcos Recomendados</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-4" *ngFor="let person of fetchedRecipe">
+      <br>
+      <div class="card"   style="width: 18rem;">
+        <img class="card-img-top" src="./assets/img/lancha.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{person[0]}}</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. t</p>
+          <a href="#" class="btn btn-primary">Avalie o barco</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
